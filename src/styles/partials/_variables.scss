@@ -1,0 +1,43 @@
+//global
+@font-face {
+	font-family: HelveticaNeueBold;
+	src: url('../../fonts/HelveticaNeueBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: HelveticaNeue;
+	src: url('../../fonts/HelveticaNeueMedium.ttf') format('truetype');
+}
+
+$font-content: 'HelveticaNeue', sans-serif;
+$font-bold: 'HelveticaNeueBold', sans-serif;
+
+//blue theme colours 
+$font-color-content:#F1EA35;
+$font-color-secondary: #143B60;
+$font-color-header: #FFF;
+
+$background-color-main: #106374;
+$background-darker: #004356;
+$background-color-darker: rgb(19, 57, 88);
+$background-color-accent: #F1EA35;
+$background-header: #F1EA35;;
+
+$border-color: #FFF;
+$circle-outline: #76A4AD;
+
+//orange theme colours
+$games-background-color: #FF9400;
+$games-font-color-header: #B63C25;
+$font-color-light: #FFF;
+
+//red theme colours
+$party-background-color: #C10712;
+$party-font-color-header: #E25800;
+$party-font-color-content: #FFF;
+
+//pink theme colours
+$goods-background-color: #F0B7BC;
+$goods-font-color-header: #901E2E;
+$goods-font-color-content: #FFF;
+

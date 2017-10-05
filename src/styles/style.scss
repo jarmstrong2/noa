@@ -1,0 +1,40 @@
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/index";
+@import "partials/how-it-works.scss";
+@import "partials/collaborations";
+@import "partials/about";
+@import "partials/contact";
+@import "partials/games";
+@import "partials/goods";
+@import "partials/party";
+@import "partials/flickity";
+@import "partials/footer";
+
+html {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+section{
+	margin: 0; 
+	padding: 0;
+}
+
+.wrapper{
+	max-width: 1920px;
+}
+
+h1, h2, h3{
+	font-weight: normal;
+	margin: 0; 
+}
+
+// .hidden{
+// 	visibility: hidden;
+// }
+
+// .show{
+// 	visibility: visible;
+// }

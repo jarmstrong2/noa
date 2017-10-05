@@ -1,0 +1,492 @@
+//blue theme header
+h1{
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: $font-bold;
+	color: $font-color-header;
+	padding-top: 140px;
+	padding-bottom: 30px;
+	margin: auto;
+	letter-spacing: 0.9px;
+	@media (max-width: 768px) {
+		padding-top: 90px;
+		}
+	@media (max-width: 468px) {
+		padding-top: 50px;
+		}
+}
+
+header{
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 60px;
+	background-color: $background-header;
+	@media (max-width: 1100px) {
+		padding: 0 28px;
+		}
+	@media (max-width: 940px) {
+		flex-direction: column;
+		}
+	@media (max-width: 768px) {
+		padding: 0;
+		}
+	img{
+		padding-top: 18px;
+		width: 205px;
+		height: auto;
+		@media (max-width: 1100px) {
+		width: 180px;
+		}
+		@media (max-width: 940px) {
+		display: block;
+		margin: 0 auto;
+		}
+	}
+	.nav-deco{
+		position: absolute; 
+		z-index: 1;
+		overflow-x: hidden; 
+		margin-top: -12px;
+		width: 100%;
+		bottom: -35px;
+		left: 0;
+		@media (max-width: 1275px) {
+			bottom: -25px;
+		}
+		@media (max-width: 940px) {
+			bottom: -9px;
+		}
+		@media(max-width: 500px) {
+			bottom: -5px;
+		}
+		img{
+			width: 101%;
+			padding-top: 0;
+		}
+	}
+}
+
+nav{
+	color: $font-color-secondary;
+	font-family: $font-bold;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	@media (max-width: 1200px) {
+		width: 100%;
+	}
+	.nav-contact p {
+		margin: 7px 0;
+		text-transform: lowercase;
+		cursor: default;
+	}
+	ul{
+		display: flex;
+		// flex-wrap: wrap;
+		justify-content: center;
+		// align-items: center;
+		list-style-type: none;
+		@media (max-width: 1100px) {
+		padding-left: 10px;
+		}
+		@media (max-width: 740px) {
+			display: none;
+		}
+		li{
+			padding: 30px 12px 0 12px;
+			cursor: pointer;
+			@media (max-width: 940px) {
+				padding: 15px 12px 0 12px
+			}
+		}
+		li.contact a{
+			// padding-bottom: 15px;
+		}
+		a{
+			text-decoration: none;
+			color: $font-color-secondary;
+		}
+		a:hover{
+			color: #FFF;
+		}
+		.header-mailto{
+			text-transform: lowercase;
+			p{
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+		}
+		.header-tfn{
+			p{
+				margin-top: 0;
+				margin-bottom: 5px;
+			}
+		}
+		.header-social{
+			margin-bottom: -10px;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+		// .fa-facebook-official{
+		// 	margin-left: 5px;
+		// 	margin-bottom: 15px;
+		// }
+	}
+	li.dropdownAttach {
+		position: relative;
+	}
+	ul.dropdown.dropdown-content {
+		display: none;
+		position: absolute;
+		z-index: 199;
+		padding: 0;
+		// top: 100%;
+		left: -15px;
+		background: $background-header;
+		border-bottom: 1px solid ($background-header, 90);
+		// width: 200px;
+		text-align: center;
+		li {
+			padding: 0;
+		}
+		li a.first{
+			border-top: 1px solid white;
+		}
+		li a {
+			display: block;
+			padding: 20px 35px;
+			transition: color 0.3s ease-out;
+			border-bottom: 1px solid white;
+			
+		}
+		li:first-child {
+			padding-top: 20px;
+	}
+		li:hover a.blue {
+			color: lighten($font-color-secondary, 10);
+		}
+	}
+	ul.dropdown.show {
+		display: block;
+	}
+	#dropdownHover:hover ul.dropdown {
+		display: block;
+	}
+}
+
+// header .dropdown.dropdown-content.gamesDropdown li:hover,
+// header .dropdown.dropdown-content.goodsDropdown li:hover,
+// header .dropdown.dropdown-content.partyDropdown li:hover {
+// 		background: white;
+// }
+header .dropdown.dropdown-content.gamesDropdown li a:hover {
+	color: lighten($games-font-color-header, 20) !important;
+}
+header .dropdown.dropdown-content.goodsDropdown li a:hover  {
+	color: lighten($goods-font-color-header, 20);
+}
+header .dropdown.dropdown-content.partyDropdown li a:hover  {
+	color: lighten($party-font-color-header, 20);
+}
+
+//red theme header 
+nav.party{
+	color: $party-font-color-header;
+	font-family: $font-bold;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	ul{
+		display: flex;
+		list-style-type: none;
+		@media (max-width: 740px) {
+			display: none;
+		}
+		li{
+			padding: 30px 12px 0 12px;
+			@media (max-width: 940px) {
+				padding: 15px 12px 0 12px
+			}
+		}
+		a{
+			text-decoration: none;
+			color: $party-font-color-header;
+		}
+		a:hover{
+			color: #FFF;
+		}
+		.header-mailto{
+			text-transform: lowercase;
+			p{
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+		}
+		.header-tfn{
+			p{
+				margin-top: 0;
+				margin-bottom: 5px;
+			}
+		}
+		.header-social{
+			margin-bottom: -10px;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+		// .fa-facebook-official{
+		// 	margin-left: 5px;
+		// 	margin-bottom: 15px;
+		// }
+	}
+}
+
+//orange theme header 
+nav.games{
+	color: $games-font-color-header;
+	font-family: $font-bold;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	ul{
+		display: flex;
+		list-style-type: none;
+		@media (max-width: 740px) {
+			display: none;
+		}
+		li{
+			padding: 30px 12px 0 12px;
+			@media (max-width: 940px) {
+				padding: 15px 12px 0 12px
+			}
+		}
+		a{
+			text-decoration: none;
+			color: $games-font-color-header;
+		}
+		a:hover{
+			color: #FFF;
+		}
+		.header-mailto{
+			text-transform: lowercase;
+			p{
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+		}
+		.header-tfn{
+			p{
+				margin-top: 0;
+				margin-bottom: 5px;
+			}
+		}
+		.header-social{
+			margin-bottom: -10px;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+		// .fa-facebook-official{
+		// 	margin-left: 5px;
+		// 	margin-bottom: 15px;
+		// }
+	}
+}
+
+//pink theme header 
+nav.goods{
+	color: $goods-font-color-header;
+	font-family: $font-bold;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	ul{
+		display: flex;
+		list-style-type: none;
+		@media (max-width: 740px) {
+			display: none;
+		}
+		li{
+			padding: 30px 12px 0 12px;
+			@media (max-width: 940px) {
+				padding: 15px 12px 0 12px
+			}
+		}
+		a{
+			text-decoration: none;
+			color: $goods-font-color-header;
+		}
+		a:hover{
+			color: #FFF;
+		}
+		.header-mailto{
+			text-transform: lowercase;
+			p{
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+		}
+		.header-tfn{
+			p{
+				margin-top: 0;
+				margin-bottom: 5px;
+			}
+		}
+		.header-social{
+			margin-bottom: -10px;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+		// .fa-facebook-official{
+		// 	margin-left: 5px;
+		// 	margin-bottom: 15px;
+		// }
+	}
+}
+
+// hamburger
+.holdHamburger {
+	background: $background-color-accent;
+	display: none;
+	@media(max-width: 740px) {
+		display: block;
+	}
+}
+#hamburger {
+	display: none;
+	@media (max-width: 740px) {
+		display: block;
+		padding: 15px 0 0 15px;
+		font-size: 32px;
+		color: $font-color-secondary;
+		cursor: pointer;
+	}
+}
+.hamburgerMenu {
+	display: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	background: white;
+	li a {
+		text-decoration: none;
+		font-size: 24px;
+		color: white;
+		display: block;
+		padding: 10px 0;
+		width: 100%;
+		background: $font-color-secondary;
+		border-top: 1px solid darken($font-color-secondary, 10);
+		&:hover {
+			// background: 
+		}
+	}
+	li:first-child {
+		border-top: 1px solid darken($font-color-secondary, 10);		
+	}
+	li:last-child {
+		border-bottom: 1px solid darken($font-color-secondary, 10);		
+	}
+}
+
+.mobileSocial {
+	display: none;
+	font-size: 14px;
+	color: $font-color-secondary;
+	@media (max-width: 780px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		text-decoration: none;
+		font-size: 14px;
+		color: $font-color-secondary;
+		display: block;
+		padding: 10px 10px;
+		font-weight: bold;
+	}
+	.header-mailto{
+		text-transform: lowercase;
+		p{
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+	}
+	.header-tfn{
+		p{
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+	}
+	.header-social{
+		margin-bottom: -10px;
+		display: flex;
+	}
+	.fa{
+		font-size: 2.3rem;
+	}
+	// .fa-facebook-official{
+	// 	margin-left: 5px;
+	// 	margin-bottom: 15px;
+	// }
+}
+
+.games-header {
+	.nav-deco {
+		width: 100%;
+		img {
+			width: 100%;
+			max-width: 100%;
+			padding-top: 0;
+		}
+	}
+}
+
+.contact-header, .about-header {
+	.nav-deco {
+		bottom: -28px;
+		padding-top: 0;
+		@media (max-width: 1275px) {
+			bottom: -25px;
+		}
+		@media (max-width: 940px) {
+			bottom: -9px;
+		}
+		@media(max-width: 500px) {
+			bottom: -5px;
+		}
+	}
+}
+
+.colloboration-header {
+	.nav-deco {
+		bottom: -35px;
+		padding-top: 0;
+		@media (max-width: 1275px) {
+			bottom: -25px;
+		}
+		@media (max-width: 940px) {
+			bottom: -9px;
+		}
+		@media(max-width: 500px) {
+			bottom: -5px;
+		}
+	}
+}
+.party-logo, .goods-logo, .games-logo, .octopus-logo {
+	cursor: pointer;
+	@media (max-width: 1200px) {
+		margin: 0 auto;
+	}
+	@media(max-width: 740px) {
+		margin-bottom: 20px;
+	}
+}
+
+.currentLink {
+	color: white !important;
+}

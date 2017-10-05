@@ -1,0 +1,375 @@
+// .flickity-viewport {
+// 	height: 100vh !important;
+// }
+
+.holdGallery {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.8);
+}
+.party.main-gallery{
+	display: none;
+	.gallery-cell {
+		width: 100%;
+		height: 100vh;
+		@media(max-width: 1075px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		img {
+			max-width: 1150px;
+			display: block;
+			margin: 65px auto 0 auto;
+			@media(max-width: 1150px) {
+				max-width: 80%;
+			}
+			@media(max-width: 1075px) {
+				margin: 0 auto;
+			}
+			@media(max-width: 540px) {
+				max-width: 100%;
+			}
+		}
+	}
+	.gallery-text {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 150px;
+		background: url(../../images/party-bgrnd.png);
+		background-size: cover;
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: #FFF;
+	}
+	.containText {
+		max-width: 1150px;
+		margin: 0 auto;
+		padding-top: 15px;
+		@media(max-width: 1150px) {
+			max-width: 80%;
+		}
+		h4 {
+			text-transform: uppercase;
+		}
+	}
+	.party-close-contain {
+		padding-bottom: 20px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 120;
+	}
+	.party-close{
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+}
+
+.goods.main-gallery{
+	display: none;
+	.gallery-cell {
+		width: 100%;
+		height: 100vh;
+		@media(max-width: 1075px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		img {
+			max-width: 1150px;
+			display: block;
+			margin: 65px auto 0 auto;
+			@media(max-width: 1150px) {
+				max-width: 80%;
+			}
+			@media(max-width: 1075px) {
+				margin: 0 auto;
+			}
+			@media(max-width: 540px) {
+				max-width: 100%;
+			}
+		}
+		img.vertical {
+			max-width: 100%;
+		}
+	}
+	.gallery-text {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 150px;
+		background: url(../../images/goods-bgrnd.png);
+		background-size: cover;
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: #FFF;
+	}
+	.containText {
+		max-width: 1150px;
+		margin: 0 auto;
+		padding-top: 15px;
+		@media(max-width: 1150px) {
+			max-width: 80%;
+		}
+		h4 {
+			text-transform: uppercase;
+		}
+		p.credit {
+			font-size: 1.2rem;
+			text-align: right;
+			margin: 0 auto;
+			padding-right: 5px;
+		}
+	}
+	.containText--narrow {
+		max-width: 55%;
+		@media(max-width: 540px) {
+			max-width: 80%;
+		}
+	}
+	.goods-close-contain {
+		padding-bottom: 20px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 120;
+	}
+	.goods-close{
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+}
+// 	display: none;
+// 	position: fixed;
+// 	z-index: 1000;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	max-height: 100vh;
+// 	background: rgba(255, 255, 255, 0.8);
+// 	.goods-close-contain {
+// 		padding-bottom: 20px;
+// 		position: fixed;
+// 		top: 0;
+// 		right: 0;
+// 		z-index: 120;
+// 	}
+// 	.goods-close{
+// 		padding-top: 20px;
+// 		padding-right: 20px;
+// 	}
+// 	.gallery-cell{
+// 		margin: 10px 50px;
+// 		width: 90%;
+// 		max-height: 100vh;
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		justify-content: center;
+// 		position: relative;
+// 		.gallery-text{
+// 			padding: 10px 150px;
+// 			font-size: 1.4rem;
+// 			font-weight: 300;
+// 			// text-align: center;
+// 			color: #FFF;
+// 			width: 100%;
+// 			// position: absolute;
+// 			bottom: 0px;
+// 			background: url(../../images/goods-bgrnd.png);
+// 			background-size: cover;
+// 			// background: transparentize(#E25800, 0.5);
+// 			@media (max-width: 480px) {
+// 				background: #E25800;
+// 				bottom: -50%;
+// 			}
+// 			h4 {
+// 				text-transform: uppercase;
+// 			}
+// 			p.credit {
+// 				font-size: 1.2rem;
+// 				text-align: right;
+// 				margin: 0 auto;
+// 				padding-right: 5px;
+// 			}
+// 		}
+// 		.gallery-text.lower {
+// 			bottom: -115px;
+// 		}
+// 		.gallery-text.lower.text-line-up {
+// 			p {
+// 				max-width: 81%;
+// 				margin: 10px auto;
+// 			}
+// 		}
+// 		img{
+// 			max-width: 100%;
+// 		}
+// 	}
+// }
+.games.main-gallery {
+	display: none;
+	.gallery-cell {
+		width: 100%;
+		height: 100vh;
+		@media(max-width: 1075px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		img {
+			max-width: 1150px;
+			display: block;
+			margin: 65px auto 0 auto;
+			@media(max-width: 1150px) {
+				max-width: 80%;
+			}
+			@media(max-width: 1075px) {
+				margin: 0 auto;
+			}
+			@media(max-width: 540px) {
+				max-width: 100%;
+			}
+		}
+	}
+	.gallery-text {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 150px;
+		background: url(../../images/party-bgrnd.png);
+		background-size: cover;
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: #FFF;
+	}
+	.containText {
+		max-width: 1150px;
+		margin: 0 auto;
+		padding-top: 15px;
+		@media(max-width: 1150px) {
+			max-width: 80%;
+		}
+		h4 {
+			text-transform: uppercase;
+		}
+	}
+	.games-close-contain {
+		padding-bottom: 20px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 120;
+	}
+	.games-close{
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+}
+// .games.main-gallery{
+// 	display: none;
+// 	position: fixed;
+// 	z-index: 1000;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100vh;
+// 	background: rgba(255, 255, 255, 0.8);
+// 	.games-close-contain {
+// 		padding-bottom: 20px;
+// 		position: fixed;
+// 		top: 0;
+// 		right: 0;
+// 		z-index: 120;
+// 		// display:flex;
+// 		// justify-content: flex-end;
+// 	}
+// 	.games-close{
+// 		padding-top: 20px;
+// 		padding-right: 20px;
+// 	}
+// 	.gallery-cell{
+// 		margin: 10px 50px;
+// 		width: 90%;
+// 		max-height: 100%;
+// 		display: flex;
+// 		flex-direction: column;
+// 		position: relative;
+// 		.gallery-text{
+// 			padding: 10px 150px;
+// 			font-size: 1.4rem;
+// 			// text-align: center;
+// 			color: #FFF;
+// 			width: 100%;
+// 			// position: absolute;
+// 			bottom: -20px;
+// 			font-weight: 300;
+// 			background: url(../../images/games-bgrnd.png);
+// 			background-size: cover;
+// 			// background: transparentize(#E25800, 0.5);
+// 			@media (max-width: 480px) {
+// 				background: #E25800;
+// 				bottom: -50%;
+// 			}
+// 			h4 {
+// 				text-transform: uppercase;
+// 			}
+// 		}
+// 		img{
+// 			max-width: 100%;
+// 		}
+// 	}
+// }
+
+// /* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 75px;
+  height: 50px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.games.main-gallery {
+	/* arrow color */
+	.flickity-prev-next-button .arrow {
+		fill: #b63c25;
+	}
+	.flickity-prev-next-button.no-svg {
+		color: #b63c25;
+	}
+}
+
+.goods.main-gallery {
+	.flickity-prev-next-button .arrow {
+		fill: #901e2e;
+	}
+	.flickity-prev-next-button.no-svg {
+		color: #901e2e;
+	}
+}
+
+.party.main-gallery {
+	.flickity-prev-next-button .arrow {
+		fill: #e25800;
+	}
+	.flickity-prev-next-button.no-svg {
+		color: #e25800;
+	}
+}

@@ -1,0 +1,171 @@
+//blue theme footer 
+footer{
+	position: relative;
+	z-index: 10;
+	background-color: $background-color-accent;
+	display: flex;
+	justify-content: space-between;
+	color: $font-color-secondary;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		text-align: center;
+	}
+	p{
+		margin: 0;
+	}
+	.footer-copyright{
+		font-family: $font-content;
+		font-size: 1.4rem;
+		padding-left: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		@media (max-width: 768px) {
+		padding-right: 45px;
+		padding-bottom: 0px;
+		}
+	}
+	.footer-contact{
+		font-family: $font-bold;
+		font-size: 1.6rem;
+		display: flex;
+		align-items: center;
+		padding-right: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		cursor: default;
+		@media (max-width: 768px) {
+		padding-left: 45px;
+		flex-direction: column;
+		}
+		a{
+			text-decoration: none;
+			color: $font-color-secondary;
+		}
+		.footer-tfn{
+			margin: 0 25px;
+			cursor: default;
+			@media (max-width: 768px) {
+				margin: 10px 0;
+			}
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+		.fa:first-child {
+			padding-left: 5px;
+		}
+	}
+}
+
+//red theme footer 
+footer.party{
+	background-color: $background-color-accent;
+	display: flex;
+	justify-content: space-between;
+	color: $party-font-color-header;
+	p{
+		margin: 0;
+	}
+	.footer-copyright{
+		font-family: $font-content;
+		font-size: 1.4rem;
+		padding-left: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+	.footer-contact{
+		font-family: $font-bold;
+		font-size: 1.6rem;
+		display: flex;
+		padding-right: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		cursor: default;
+		a{
+			text-decoration: none;
+			color: $party-font-color-header;
+		}
+		.footer-tfn{
+			margin-left: 25px;
+			margin-right: 25px;
+			cursor: default;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+	}
+}
+
+//orange theme footer
+footer.games{
+	background-color: $background-color-accent;
+	display: flex;
+	justify-content: space-between;
+	color: $games-font-color-header;
+	p{
+		margin: 0;
+	}
+	.footer-copyright{
+		font-family: $font-content;
+		font-size: 1.4rem;
+		padding-left: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+	.footer-contact{
+		font-family: $font-bold;
+		font-size: 1.6rem;
+		display: flex;
+		padding-right: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		a{
+			text-decoration: none;
+			color: $games-font-color-header;
+		}
+		.footer-tfn{
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+	}
+}
+
+//pink theme footer
+footer.goods{
+	background-color: $background-color-accent;
+	display: flex;
+	justify-content: space-between;
+	color: $goods-font-color-header;
+	p{
+		margin: 0;
+	}
+	.footer-copyright{
+		font-family: $font-content;
+		font-size: 1.4rem;
+		padding-left: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+	.footer-contact{
+		font-family: $font-bold;
+		font-size: 1.6rem;
+		display: flex;
+		padding-right: 45px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		a{
+			text-decoration: none;
+			color: $goods-font-color-header;
+		}
+		.footer-tfn{
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		.fa{
+			font-size: 2.3rem;
+		}
+	}
+}
